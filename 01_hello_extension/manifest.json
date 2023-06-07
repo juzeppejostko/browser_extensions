@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Hello",
+  "description": "Hello extension",
+  "version": "0.1",
+  "icons": {
+    "128": "linux.png"
+  },
+  "author": "noname",
+
+  "permissions": ["<all_urls>"],
+  "minimum_chrome_version": "55.0.0.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "91.1.0"
+    }
+  },
+
+  "background": {
+"scripts": ["script.js"]
+},
+
+"browser_action": {
+"default_title": "console.send",
+"default_popup": "hello.html"
+},
+"options_ui": {
+"page": "hello.html",
+"chrome_style": false
+}
+}
